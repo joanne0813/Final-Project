@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>註冊頁面</title>
     <link rel="stylesheet" href="final.css">
+    <script>
+        function jump() {
+            window.location.href="center.html";
+        }
+    </script>
 </head>
 <body>
     <header>
@@ -58,13 +63,13 @@
                          </form>
                      </div>
                 </div>
-                <form method="get" action="../member/center.html">
+                <!--<form method="post" action="../member/center.html">--> 
                     <div id="memberformsubmitbox" style="text-align: center; align-items: center;">
-                        <input type="button" id="memberformsubmitbtn" value="登入" />
+                        <input type="button" id="memberformsubmitbtn" value="登入" onclick=javascript:jump() />
                     </div>
-                </form>
+                <!--</form>--> 
+                </div>
             </div>
-        </div>
-    </div>  
+        </div>  
 </body>
 </html>
