@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f3e7;
+}
+
+.member {
+    padding: 30px 20px;
+    border-radius: 40px;
+}
+
+.re-content {
+    position: relative;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.signup-form {
+    width: 325px;
+    line-height: 55px;
+    padding: 20px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    float: left;
+    border-radius: 40px;
+}
+
+.login-form {
+    width: 325px;
+    line-height: 55px;
+    padding: 20px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    margin-left: 20px;
+    float: right;
+    border-radius: 40px;
+}
+
+#memberformsubmitbtn {
+    width: 20%;
+    border-radius: 70px;
+    border: 1px solid gray;
+    height: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 50px;
+}
+
+#memberformsubmitbtn:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+
+/*head*/
+body {
+    background-color: #f5f3e7;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    user-select: none;
+}
+
+header {
+    display: block;
+    position: sticky;
+    z-index: 5; 
+    background-color: #f5f3e7;
+    text-align: center;
+    top: -0.1px;
+    left: 5%;
+    bottom: 50%;
+    right: 5%;
+    height: 132px;
+    width: 100%;
+}
+
+.title {
+    text-align: justify;
+    font-family: 微軟正黑體;
+    margin: 0px 0px -40px 0px;
+}
+
+.title a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #b49f82;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #b49f82;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+    position: sticky;
+    display: block;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+/*搜尋*/
+.searchbar {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    border-radius: 13px;
+    border-style: ridge;
+    background: #f5f3e7;
+    border-color: #795f3b;
+    text-align: right;
+}
+
+.searchbar:hover {
+    background: #f5f3e7;
+    border-style: hidden;
+    border-radius: 13px;
+}

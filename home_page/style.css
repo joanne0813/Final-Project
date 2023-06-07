@@ -1,0 +1,289 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f3e7;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    user-select: none;
+}
+
+header {
+    display: block;
+    position: sticky;
+    z-index: 5; 
+    background-color: #f5f3e7;
+    text-align: center;
+    top: -0.1px;
+    left: 5%;
+    bottom: 50%;
+    right: 5%;
+    height: 132px;
+    width: 100%;
+}
+
+.title {
+    text-align: justify;
+    font-family: 微軟正黑體;
+    margin: 0px 0px -40px 0px;
+}
+
+.title a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #b49f82;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #b49f82;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+    position: sticky;
+    display: block;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+/*搜尋*/
+.searchbar {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    border-radius: 13px;
+    border-style: ridge;
+    background: #f5f3e7;
+    border-color: #795f3b;
+    text-align: right;
+}
+
+.searchbar:hover {
+    background: #f5f3e7;
+    border-style: hidden;
+    border-radius: 13px;
+}
+
+/*輪播*/
+img {
+    height: 400px;
+    width: 1210px;
+}
+
+.container {
+    width: auto;
+    height: 400px;
+    position: relative;
+    margin: auto;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+}
+
+.show {
+    display: block;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -30px;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+    transition: 0.6s ease;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    color: white;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: round;
+    animation-duration: round 25s linear infinite;
+}
+
+/*@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}*/
+
+@keyframes round {
+4% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+    /* 0 - 1秒 滑入*/
+  }
+  20% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: 0;
+    /* 1- 5秒靜止*/
+  }
+  24% {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    left: -100%;
+    /* 5-6秒滑出*/
+  }
+  26% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: -100%;
+    /* 6-6.5秒變透明*/
+  }
+  28% {
+    opacity: 0;
+    filter: alpha(opacity=0);
+    left: 100%;
+    /* 6.5-7秒回到起始位置*/
+  }
+}
+
+/*main*/
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: #fffcf2;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 20px;
+    border-radius: 13px;
+    background-size: cover;
+}
+
+h2 {
+    text-align: center;
+}
+
+.text {
+    flex: 1;
+    margin-left: 200px;
+}
+
+.image {
+    flex: 0 0 auto;
+    background-size: contain;
+}
+
+h3 {
+    text-align: left;
+    margin-left: 39%;
+}
+
+:target:before {
+    content: "";
+    display: block;
+    height: 120px;
+    }
+
+
+/*新品上市+熱銷商品*/
+.section5 img {
+    width: 320px;
+    height: 400px;
+    border-radius: 5%;
+    margin: 2% 2% 0.5% 40px;
+    float: left;
+    align-items: center;
+}
+
+.section5 img:hover {
+    transform: scale(1.1);
+}
+
+.section5 {
+    width: 100%;
+    height: 550px;
+    background-color: #ece6c8;
+    font-size: 20px;
+    letter-spacing: 2.5px;
+    border-radius: 2px;
+    font-family: 微軟正黑體
+}
+
+.left {
+    margin: 15px 145px 15px 145px;
+    float: left;
+    text-align: center;
+
+}
+
+.cen {
+    float: left;
+}
+
+.button {
+    width: 100px;
+    height: 30px;    
+    background-color: #795f3b;
+    border-radius: 10%;
+    color: white;
+}
+
+.button:hover {
+    transform: scale(1.1);
+    background-color: white;
+    border-color: #795f3b;
+    color: #795f3b;
+}

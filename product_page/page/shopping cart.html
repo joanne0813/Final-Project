@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../end.css">
+</head>
+<body>
+    <header>
+        <nav class="title">
+             <a href="../../home_page/home.html"><img style="width: 100px; height: 100px;" src="../image/logo.png"></a>
+             <a href="../../home_page/home.html#new">新品上市</a> | 
+             <a href="../../home_page/home.html#product">熱銷商品</a> | 
+             <a href="../../product_page/page/info_fruit.html">商品資訊</a> | 
+             <a href="../../member/qa.html">常見問題</a> | 
+             <a href="../../home_page/home.html#about">聯絡資訊</a>
+         </nav>
+         
+         <nav class="header-nav">
+             <input class="searchbar" type="search" name="searchword" id="search" placeholder="Search">
+             <a href="#shopping cart.html"><img class="icon" src="../../home_page/image/glass.png"></a>
+             <a href="../../member/member.html"><img class="icon" src="../image/avatar.png"></a>
+             <a href="shopping cart.html"><img class="icon" src="../image/shopping-cart.png"></a>
+         </nav> 
+         <hr>
+    </header>
+    <section class="section1">
+        <div class="apple">
+        蘋果果乾
+        $100 <br>
+        <input type="text" value="1" id='text'><br>
+            <input type="submit" value="-" id="reduce">
+            <input type="submit" value="+" id="add">
+        
+        <script>
+            add.onclick = function add() {
+                text.value++;
+            }
+            reduce.onclick = function reduce(){
+                if(text.value>1) text.value--;
+            }
+        </script>
+        <input class="shoppingcart" type="button" value="移除商品"> 
+
+        </div>
+        <img src="../fruit/apple.jpg">
+
+        <div class="mango">
+            芒果果乾
+            $150 <br>
+            <input type="text" value="2" id='text'><br>
+            <input type="submit" value="-" id="reduce">
+            <input type="submit" value="+" id="add">
+        
+        <script>
+            var add1= document.getElementById('add');
+            var num = document.getElementById('texxt');
+            var reduce1 = document.getElementById('reduce');
+            add.onclick = function add() {
+                text.value++;
+            }
+            reduce.onclick = function reduce(){
+                if(text.value>1) text.value--;
+            }
+        </script>
+        <input class="shoppingcart" type="button" value="移除商品"> 
+        </div>
+        <img src="../fruit/mango.jpg" >
+        <tr></tr>
+        <section class="section2">
+        <form>
+            <span>寄送方式</span>
+            <select name="shippingmethod" style="width:100px">
+                <option value="7-ELEVEN">7-ELEVEN</option>
+                <option value="全家" >全家</option>
+                <option value="萊爾富">萊爾富</option>
+                <option value="宅配">宅配</option>
+            </select>
+            <br>
+            <span></span>
+            <br>
+            <span>付款方式</span>
+            <select name="pay" style="width:100px">
+                <option value="貨到付款">貨到付款</option>
+                <option value="線上支付">線上支付</option>
+                <option value="信用卡付款">信用卡付款</option>
+            </select>
+            <br>
+            <span></span>
+            <br>
+            <span>備註</span>
+            <textarea cols="50" rows="2"></textarea>
+        </form>
+        <input class="send" type="button" value="送出訂單">
+        <span class="sum">總金額:$400元</span> <br>
+        </section>
+        
+    </section>
+ 
+    <br> 

@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f3e7;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    user-select: none;
+}
+
+header {
+    display: block;
+    position: sticky;
+    z-index: 5; 
+    background-color: #f5f3e7;
+    text-align: center;
+    top: -0.1px;
+    left: 5%;
+    bottom: 50%;
+    right: 5%;
+    height: 132px;
+    width: 100%;
+}
+
+.title {
+    text-align: justify;
+    font-family: 微軟正黑體;
+    margin: 0px 0px -40px 0px;
+}
+
+.title a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #b49f82;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #b49f82;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+    position: sticky;
+    display: block;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+/*搜尋*/
+.searchbar {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    border-radius: 13px;
+    border-style: ridge;
+    background: #f5f3e7;
+    border-color: #795f3b;
+    text-align: right;
+}
+
+.searchbar:hover {
+    background: #f5f3e7;
+    border-style: hidden;
+    border-radius: 13px;
+}
+
+/*member*/
+.member {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 1%;
+    vertical-align: top;
+    margin-top: 2%;
+    padding: 10px 50px 30px 50px;
+    background-color: rgb(245, 245, 245);
+}
+
+.contents {
+    width: 100%;
+    height: auto;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+}
+
+.information {
+    width: 100%;
+    height: 50px;
+    display: inline-block;
+    text-align: left;
+    font-size: 28px;
+    letter-spacing: 5px;
+    border-bottom-style: solid;
+    border-width: 4px;
+    border-color: #bda589;
+    line-height: 50px;
+}
+
+.information button {
+    display: inline-block;
+    background-color: #eea825;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 5px 10px;
+    margin-left: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.name {
+    width: 50%;
+    height: 50px;
+    margin-top: 30px;
+    font-size: 17px;
+    line-height: 50px;
+}
+
+.gender {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.gender-option {
+    display: inline-block;
+}
+
+.phone {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.birth {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.address {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+.mail {
+    width: 50%;
+    height: 50px;
+    font-size: 17px;
+    line-height: 50px;
+    margin-top: 20px;
+}
+
+/* 會員訂單 */
+
+.whole-order {
+    display: inline-block;
+    width: 70%;
+    height: auto;
+    margin-left: 1%;
+    vertical-align: top;
+    margin-top: 2%;
+    padding: 10px 50px 30px 50px;
+    background-color: rgb(245, 245, 245);
+}
+
+.order {
+    display: flex;
+    align-items: center;
+}
+
+.order1 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-info {
+    margin-top: 20px;
+    width: 85%;
+    height: auto;
+    padding: 10px 35px;
+    border: tan 3px solid;
+    font-size: 17px;
+}
+
+.order-list {
+    font-size: 17px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    border: tan 3px solid;
+}
+
+.order-price {
+    font-size: 17px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 35px;
+    border: tan 3px solid;
+}
+
+.return button {
+    margin-top: 20px;
+    background-color: #eea825;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #f0f0f0;
+    text-align: center;
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+/* 我的評論 */
+.all-comments {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}

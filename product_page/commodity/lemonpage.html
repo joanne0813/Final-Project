@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../end.css">
+</head>
+<body>
+    <header>
+        <nav class="title">
+             <a href="../../home_page/home.html"><img style="width: 100px; height: 100px;" src="../image/logo.png"></a>
+             <a href="../../home_page/home.html#new">新品上市</a> | 
+             <a href="../../home_page/home.html#product">熱銷商品</a> | 
+             <a href="../../product_page/page/info_fruit.html">商品資訊</a> | 
+             <a href="../../member/qa.html">常見問題</a> | 
+             <a href="../../home_page/home.html#about">聯絡資訊</a>
+         </nav>
+         
+         <nav class="header-nav">
+             <input class="searchbar" type="search" name="searchword" id="search" placeholder="Search">
+             <a href="lemonpage.html"><img class="icon" src="../../home_page/image/glass.png"></a>
+             <a href="../../member/member.html"><img class="icon" src="../image/avatar.png"></a>
+             <a href="../page/shopping cart.html"><img class="icon" src="../image/shopping-cart.png"></a>
+         </nav> 
+         <hr>
+    </header>
+ 
+    <br> 
+ 
+    <div class="part1">
+        <img src="../tea/lemon.jpg"><br>
+        <div class="word">
+            相關資訊: <br>
+            產地:台灣花蓮<br>
+            成分:檸檬 <br>
+            警語:未滿三歲者請勿食用
+        </div>
+        <div class="word1">
+            檸檬茶<br>
+            $75<br>
+            <section class="word2">
+                <input type="text" value="1" id='text'><br>
+                <input type="submit" value="-" id="reduce">
+                <input type="submit" value="+" id="add">
+            
+            <script>
+                add.onclick = function add() {
+                    text.value++;
+                }
+                reduce.onclick = function reduce(){
+                    if(text.value>1) text.value--;
+                }
+            </script>
+            </section>  
+            <input class="shoppingcart" type="button" value="加入購物車"> 
+        </div>
+    </div>
+    <div class="part3">
+        <h1 align="center">評論</h1>
+        <section>
+            <img class="head" src="../another/avatar.png" style="border:2px black solid;"> <br>
+            陳**<br>
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star0.5.png"><br>
+            <font size="5"> 超級棒</font>
+        </section>
+        <section>
+            <img class="head" src="../another/avatar.png" style="border:2px black solid;"> <br>
+            陳**<br>
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star0.5.png"><br>
+            <font size="5"> 超級棒</font>
+        </section>
+        <section>
+            <img class="head" src="../another/avatar.png" style="border:2px black solid;"> <br>
+            陳**<br>
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star.png">
+            <img class="star"src="../another/star0.5.png"><br>
+            <font size="5"> 超級棒</font>
+        </section>
+    </div>
+    <form class="form">
+        <h1>評價此商品</h1>
+    <img class="star" src="../another/star0.png">
+    <img class="star" src="../another/star0.png">
+    <img class="star" src="../another/star0.png">
+    <img class="star" src="../another/star0.png">
+    <img class="star" src="../another/star0.png"><br>
+    <div class="comment" style="border:2px black solid;">
+        <img class="producticon" src="../another/camera.png"><br>
+        新增圖片
+    </div>
+    <div class="comment"  style="border:2px black solid;">
+        <img class="producticon" src="../another/video.png"><br>
+        新增影片
+    </div>
+    <textarea cols="150" rows="20" wrap="hard" ></textarea>
+    <input type="button" value="送出評論">
+</form>
+</body>
+</html>

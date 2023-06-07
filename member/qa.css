@@ -1,0 +1,162 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f5f3e7;
+    margin-top: 50px;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    margin-right: 150px;
+    user-select: none;
+}
+
+header {
+    display: block;
+    position: sticky;
+    z-index: 5; 
+    background-color: #f5f3e7;
+    text-align: center;
+    top: -0.1px;
+    left: 5%;
+    bottom: 50%;
+    right: 5%;
+    height: 132px;
+    width: 100%;
+}
+
+.title {
+    text-align: justify;
+    font-family: 微軟正黑體;
+    margin: 0px 0px -40px 0px;
+}
+
+.title a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #b49f82;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-nav a {
+    padding: 10px;
+    display: inline-block;
+    color: #795f3b;
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    color: #b49f82;
+}
+
+.icon {
+    width: 20px;
+    height: 20px;
+    margin: 0px 10px 0px 10px;
+    position: sticky;
+    display: block;
+}
+
+.icon:hover {
+    transform: scale(1.5);
+}
+
+/*搜尋*/
+.searchbar {
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    border-radius: 13px;
+    border-style: ridge;
+    background: #f5f3e7;
+    border-color: #795f3b;
+    text-align: right;
+}
+
+.searchbar:hover {
+    background: #f5f3e7;
+    border-style: hidden;
+    border-radius: 13px;
+}
+
+.sideqna {
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 80px 0;
+    text-align: center;
+}
+
+.beside a {
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    position: relative;
+}
+
+.beside a+a::before {
+    content: '';
+    position: absolute;
+    border-top: 1px solid #CCD5AE;
+    left: 10px;
+    right: 10px;
+    top: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+article {
+    float: left;
+    width: 73%;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin: 60px 10px;
+    border-radius: 20px;
+}
+
+.card1 {
+    padding: 20px;
+    margin: 60px 10px;
+    border-radius: 20px;
+}
+
+aside {
+    float: right;
+    width: 25%;
+}
+
+.how {
+    color: #463F3A;
+    outline: none;
+    font-size: 25px;
+    letter-spacing: 3px;
+    font-family: monospace;
+    border-color: white;
+    border-style: none;
+}
+
+.a {
+    padding-left: 20px;
+    font-size: 17px;
+}
+
+.clearfix {
+    clear: both;
+}

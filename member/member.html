@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>註冊頁面</title>
+    <link rel="stylesheet" href="final.css">
+</head>
+<body>
+    <header>
+        <nav class="title">
+             <a href="../home_page/home.html"><img style="width: 100px; height: 100px;" src="image/logo.png"></a>
+             <a href="../home_page/home.html#new">新品上市</a> | 
+             <a href="../home_page/home.html#product">熱銷商品</a> | 
+             <a href="../product_page/page/info_fruit.html">商品資訊</a> | 
+             <a href="../member/qa.html">常見問題</a> | 
+             <a href="../home_page/home.html#about">聯絡資訊</a>
+         </nav>
+         
+         <nav class="header-nav">
+             <input class="searchbar" type="search" name="searchword" id="search" placeholder="Search">
+             <a href="member.html"><img class="icon" src="../home_page/image/glass.png"></a>
+             <a href="../member/member.html"><img class="icon" src="image/avatar.png"></a>
+             <a href="../product_page/page/shopping cart.html"><img class="icon" src="image/shopping-cart.png"></a>
+         </nav> 
+         <hr>
+     </header>
+ 
+     <br>
+
+    <div class="member">
+        <div class="re-content">
+            <div id="re-title">
+                <div id="welcome" style="text-align: center;font-size: 40px; ">
+                    <p>歡迎成為我們的會員！</p>
+                </div>
+                <div class="form">
+                    <div class="signup-form">
+                       <form id="signform" method="post">
+                            <div id="signup">
+                                <p>註冊會員</p>
+                            </div>
+                            <input type="mail" name="mail"  placeholder="輸入註冊信箱"> <br>
+                            <input type="text" name="password"  placeholder="輸入密碼"> <br>
+                            <input type="password" name="pwcheck"  placeholder="再次輸入密碼"> <br>
+                            <input type="text" name="userfirstname"  placeholder="輸入姓氏"> <br>
+                            <input type="text" name="userlastname"  placeholder="輸入名字"> <br>
+                        </form>
+                    </div>
+                    <div class="login-form">
+                        <form id="logform" method="post">
+                             <div id="signup" >
+                                 <p>會員登入</p>
+                             </div>
+                             <input type="mail" name="mail"  placeholder="帳號"> <br>
+                             <input type="text" name="password"  placeholder="密碼"> <br>
+                         </form>
+                     </div>
+                </div>
+                <form method="post" action="center.html">
+                    <div id="memberformsubmitbox" style="text-align: center; align-items: center;">
+                        <input type="submit" id="memberformsubmitbtn" value="登入" />
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>  
+</body>
+</html>
