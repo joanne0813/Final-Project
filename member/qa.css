@@ -163,3 +163,9 @@ aside {
 .clearfix {
     clear: both;
 }
+
+:target:before {
+    content: " ";
+    display: block;
+    height: 120px;
+    }
