@@ -1,7 +1,59 @@
-* {
-    box-sizing: border-box;
+.member {
+    padding: 30px 20px;
+    border-radius: 40px;
 }
 
+.re-content {
+    position: relative;
+    padding: 1rem;
+}
+
+.form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.signup-form {
+    width: 325px;
+    line-height: 55px;
+    padding: 20px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    float: left;
+    border-radius: 40px;
+}
+
+.login-form {
+    width: 325px;
+    line-height: 55px;
+    padding: 20px;
+    border: 1px solid gray;
+    margin-right: 10px;
+    margin-left: 20px;
+    float: right;
+    border-radius: 40px;
+}
+
+button {
+    width: 25%;
+    min-width: 100px;
+    display: inline-block;
+    margin: 0 10px;
+    height: 35px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    outline: 0;
+    font-size: 14px;
+}
+
+#first:hover {
+    background: lightgray;
+    cursor: pointer;
+}
+
+/*head*/
 body {
     background-color: #f5f3e7;
     margin-top: 50px;
@@ -14,14 +66,14 @@ body {
 header {
     display: block;
     position: sticky;
-    z-index: 5;
+    z-index: 5; 
     background-color: #f5f3e7;
     text-align: center;
     top: -0.1px;
     left: 5%;
     bottom: 50%;
     right: 5%;
-    height: 130px;
+    height: 132px;
     width: 100%;
 }
 
@@ -87,77 +139,3 @@ nav a:hover {
     border-style: hidden;
     border-radius: 13px;
 }
-
-/*qna*/
-.sideqna {
-    width: 300px;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    padding: 80px 0;
-    text-align: center;
-}
-
-.beside a {
-    display: block;
-    padding: 10px;
-    color: black;
-    text-decoration: none;
-    position: relative;
-}
-
-.beside a+a::before {
-    content: '';
-    position: absolute;
-    border-top: 1px solid #CCD5AE;
-    left: 10px;
-    right: 10px;
-    top: 0;
-}
-
-main {
-    padding: 20px;
-}
-
-article {
-    float: left;
-    width: 73%;
-}
-
-.card {
-    background-color: white;
-    padding: 20px;
-    margin: 60px 10px;
-    border-radius: 20px;
-}
-
-.card1 {
-    padding: 20px;
-    margin: 60px 10px;
-    border-radius: 20px;
-}
-
-aside {
-    float: right;
-    width: 25%;
-}
-
-.how {
-    color: #463F3A;
-    outline: none;
-    font-size: 25px;
-    letter-spacing: 3px;
-    font-family: monospace;
-    border-color: white;
-    border-style: none;
-}
-
-.p {
-    padding-left: 20px;
-    font-size: 17px;
-}
-
-/*.clearfix {
-    clear: both;
-}*/

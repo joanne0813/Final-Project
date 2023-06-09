@@ -343,3 +343,7 @@ input:hover {
     padding: 20px;
 
 }
+
+.producticon:hover {
+    transform: scale(1.1);
+}
