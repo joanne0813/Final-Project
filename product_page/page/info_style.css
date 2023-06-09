@@ -13,16 +13,15 @@ body {
 
 header {
     display: block;
-    position: sticky;
+    position: fixed;
     z-index: 5; 
     background-color: #f5f3e7;
     text-align: center;
-    top: -0.1px;
-    left: 5%;
-    bottom: 50%;
-    right: 5%;
-    height: 132px;
-    width: 100%;
+    top: -0.5px;
+    bottom: -50%;
+    right: 9.5%;
+    height: 133px;
+    width: 81%;
 }
 
 .title {
@@ -116,7 +115,7 @@ nav a:hover {
     text-align: center;
     word-spacing: 380px;
     font-size: 20px;
-    margin: 10px;
+    margin: 90px 10px 10px 10px;
     width: 1200px;
     border-radius: 10px;
     font-family: 微軟正黑體
